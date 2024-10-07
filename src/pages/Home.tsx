@@ -21,7 +21,7 @@ const HomePage = () => {
       <button onClick={handlePlayClick}>Play Video</button>
       {showVideo && (
         <Suspense fallback={<div>Loading Video...</div>}>
-          <YouTubePlayer /* videoId="your-video-id" */ />
+          <YouTubePlayer videoId="aW2m-BtCJyE" />
         </Suspense>
       )}
       <button onClick={handleRedirect}>Go to Infinite Scroll</button>
