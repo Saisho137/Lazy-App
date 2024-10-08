@@ -14,6 +14,7 @@ const YouTubePlayer: FC<YouTubePlayerProps> = ({ videoId, width = "560", height 
 			<iframe
 				width={width}
 				height={height}
+        loading="lazy" // With this property isnt necessary to implement lazy loading manually.
 				src={embedUrl}
 				title="YouTube video player"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
